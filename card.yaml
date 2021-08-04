@@ -1,0 +1,11 @@
+train: /green_card/yolov5/dataset/images/train
+val: /green_card/yolov5/dataset/images/valid
+
+# number of classes
+nc: 19
+
+# class names
+names: [ 'id_back', 'Surname_key', 'Surname_value', 'Givenname_key', 'Givenname_value',
+        'USCIS_key', 'USCIS_value', 'Category_key', 'Category_value', 'CountryOfBirth_key',
+        'CountryOfBirth_value', 'DOB_key', 'DOB_value', 'Sex_key', 'Sex_value', 
+        'CardExpiry_key', 'CardExpiry_value', 'ResidentSince_key', 'ResidentSince_value' ]

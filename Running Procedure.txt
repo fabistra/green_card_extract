@@ -1,0 +1,6 @@
+1. Go to project directory on terminal
+2. pip install -r requirements.txt
+3. Windows Search> System Variables> Path> {path to project directory tesseract-ocr}
+4. uvicorn start:app
+5. add /docs at the end of url.
+6. Upload the image on web api and get the results on output box.

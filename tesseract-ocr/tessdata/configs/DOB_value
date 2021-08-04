@@ -1,0 +1,6 @@
+tessedit_char_whitelist 1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+load_system_dawg     F
+load_freq_dawg       F
+tessedit_pageseg_mode 7
+tessedit_ocr_engine_mode 1
+user_patterns_suffix user-patterns

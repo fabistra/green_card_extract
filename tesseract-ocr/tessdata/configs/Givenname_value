@@ -1,0 +1,5 @@
+tessedit_char_whitelist 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz .-'
+load_system_dawg     F
+load_freq_dawg       F
+tessedit_pageseg_mode 7
+tessedit_ocr_engine_mode 1

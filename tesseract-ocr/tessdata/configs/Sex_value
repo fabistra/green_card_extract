@@ -1,0 +1,7 @@
+tessedit_char_whitelist MF
+load_system_dawg     F
+load_freq_dawg       F
+user_words_suffix    user-words
+user_patterns_suffix user-patterns
+tessedit_pageseg_mode 10
+tessedit_ocr_engine_mode 1
