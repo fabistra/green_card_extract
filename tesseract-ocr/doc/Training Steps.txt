@@ -1,0 +1,24 @@
+Link to download jtess editor:
+https://sourceforge.net/projects/vietocr/files/jTessBoxEditor/
+
+Save the tesseract-ocr to system environment variables > path
+
+Generate tif file with jtessboxeditor merge tif tool.
+
+Create wordstring box file with jtessboxeditor.
+
+Edit the wordstring file to rectify any errors from tesseract.
+
+Create lstmf file from tif and box files:
+tesseract eng.gcard.exp0.tif training --psm 6 lstm.train 
+
+Download eng.traindata from best traindata repository of tesseract
+
+Create .lstm file from .traindata:
+combine_tessdata -e ./eng.traineddata ./eng.lstm 
+
+LSTM training command:
+lstmtraining --traineddata eng.traineddata --model_output ./output/ --max_iterations 50000 --train_listfile eng.gcard.exp0.train_lstm.txt --continue_from ./eng.lstm --debug_interval -1
+
+Converting checkpoint file to traineddata file:
+lstmtraining --stop_training --continue_from ./output/_checkpoint --traineddata eng.traineddata --model_output ./final_model/eng.traineddata
